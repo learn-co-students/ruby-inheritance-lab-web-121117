@@ -8,13 +8,50 @@ steve = Student.new
 steve.first_name = "Steve"
 steve.last_name = "Jobs"
 
+nemanja = Student.new
+nemanja.first_name = "Nemanja"
+nemanja.last_name = "Drakulovic"
+
+daniel = Teacher.new
+daniel.first_name = "Daniel"
+daniel.last_name = "Seehausen"
+
 avi = Teacher.new
 avi.first_name = "Avi"
 avi.last_name = "Flombaum"
 
 
-some_knowledge = avi.teach 
+some_knowledge = avi.teach
+steve.learn(some_knowledge)
 
+some_knowledge = avi.teach
+steve.learn(some_knowledge)
+
+some_knowledge = avi.teach
+steve.learn(some_knowledge)
+
+some_knowledge = avi.teach
 steve.learn(some_knowledge)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+
+some_knowledge = daniel.teach
+nemanja.learn(some_knowledge)
+
+some_knowledge = daniel.teach
+nemanja.learn(some_knowledge)
+
+some_knowledge = daniel.teach
+nemanja.learn(some_knowledge)
+
+some_knowledge = daniel.teach
+nemanja.learn(some_knowledge)
+
+jim = User.new
+jim.first_name = "Jim"
+jim.last_name = "Morrison"
+
+puts "___________"
+puts "#{steve.first_name}: #{steve.knowledge}"
+puts "____________"
+puts "#{nemanja.first_name}: #{nemanja.knowledge}"
